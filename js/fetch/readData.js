@@ -24,7 +24,6 @@ export async function loadDataLieuxVehiculesAccidents() {
 
 // *** Le seul et unique Fetch ***//
 async function getData(path) {
-   console.log("Status fetch :", response.status);
   try {
     const response = await fetch(path);
     if (!response.ok) {
