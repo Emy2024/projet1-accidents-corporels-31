@@ -8,7 +8,7 @@ import * as dataAndCharts from "./ui/index.js"
 // Variables globales : tableaux vides
 export let USAGERS = []
 export let VEHICULES = []
-/* export let COMMUNES = [] */
+export let COMMUNES = []
 export let LIEUX_ACCIDENTS = []
 export let LIEUX_VEHICULES_ACCIDENTS = []
 
@@ -16,7 +16,7 @@ export let LIEUX_VEHICULES_ACCIDENTS = []
 async function getAllData() {
   USAGERS = await readData.loadDataUsagers()
   VEHICULES = await readData.loadDataVehicules()
- /*  COMMUNES = await readData.loadDataCommunes() */
+  COMMUNES = await readData.loadDataCommunes()
   LIEUX_ACCIDENTS = await readData.loadDataLieuxAccidents()
   LIEUX_VEHICULES_ACCIDENTS = await readData.loadDataLieuxVehiculesAccidents()
   
