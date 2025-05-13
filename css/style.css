@@ -43,7 +43,6 @@ h3{
 
 /******************** Entête **********************/
 
-
 .modale__openButton {
 	width: 200px;
 	position: absolute;
@@ -61,15 +60,11 @@ h3{
   font-size: medium;
 }
 
-
-
 .sourceINSEE{
   font-size: 10px;
   text-transform: uppercase;
   padding: 1em 0em;
 }
-
-
 
 
 /******************** Footer **********************/
@@ -142,69 +137,401 @@ footer a {
   position: relative;
 }
 
-/********************* MEDIA SCREEN BIG SCREENS **********************/
+.modale__overlay{
+  position: fixed;
+  top : 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(12, 12, 12, 0.762);
+  z-index: 1200;
 
-@media screen and (min-width: 801px){
+}
 
-  /******************** popupMainPage **********************/
+.modale{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 30%;
+  max-height: 369px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  padding: 2em;
+  box-sizing: border-box;
+  border-radius: 1%;
+}
 
-  .modale__overlay{
-    position: fixed;
-    top : 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(12, 12, 12, 0.762);
-    z-index: 1200;
+.modale__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: justify;
+  margin: auto;
+  box-sizing: border-box;
+}
 
-  }
+.modale__li{
+  margin-top: 9px;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 1.5;
+}
 
-  .modale{
+.modale__paragraph {
+  padding-top: 1em;
+}
+
+.modale__ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0em;
+  margin: 0em;
+}
+
+.modale__fermer{
+  position: absolute;
+  top: 21px;
+  right: 24px;
+  padding: 0.3em;
+  color: #3ebabe;
+  font-weight: 700;
+  background-color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+.container2{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+
+/****** Partie 1 **********/
+.introduction{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 0em 0em 2em 0em;
+}
+
+
+#mapAccidents{
+  width: 100%;
+  height: 100vh;
+  margin-top: 1em;
+}
+
+
+
+/****** Infos dans les Popups de la carte **********/
+
+.titreDansPopup {
+padding: 0.3em;
+margin-bottom: 0.7em;
+background-color: rgb(205, 201, 200);
+}
+
+.leaflet-popup-content {
+margin: 1;
+}
+
+/************ Légende carte ****************/
+
+.legendeMapAccidents{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 0 solid rgba(255, 255, 255, 0);
+  margin: 0;
+  z-index: 999;
+  max-width: 90%;
+  height: auto;
+  padding-bottom: 2em;
+  position: absolute;
+  top: 87px;
+  right: 91px;
+  box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.25);
+  padding: 25px;
+}
+
+.mapContainer__divs{
+  padding: 15px 0px 5px 0px;
+}
+
+.infobulle {
+  position: relative;  
+  cursor: help;
+}
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+  content: attr(aria-label);  
+  position: absolute;
+  top: 25px;
+  left: 15%;
+  transform: translateX(-50%); 
+  z-index: 1;
+  white-space: none;
+  background-color:#ffffff;
+  border: 0.25px solid #2c2c2c;
+  padding:10px;
+  opacity: 0.9;
+  width:260px;
+}
+
+.leaflet-control-geocoder {
+  box-shadow: 0 0px 0px !important;
+  background-color: white !important;
+  border-radius: 0px !important; 
+  box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.25) !important;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+
+.mainDataContainer{
+  display: flex;
+  flex-direction: row;
+  padding-top: 22px;
+  flex-wrap: wrap;
+}
+
+.mainDataSubcontainer{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.mainDataContainer__graviteAccidents{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.containerPieCharts {
+  width: 58%;
+  display: flex;
+  flex-direction: row;
+}
+.mainDataContainer__conditionsEclairage{
+  width: 48%;
+  padding-left: 13px;
+  padding-right: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainDataContainer__conditionsAtmospheriques{
+  width: 48%;
+  padding-left: 13px;
+  padding-right: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainDataContainer__motifDeplacement{
+  width: 100%;
+}
+
+.dataContainer0{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.donneesContainer{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+  align-content: stretch;
+  justify-content: space-between;
+  flex-grow: 1;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+}
+
+.donneesTitreetChiffre{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #EDEDED;
+  width: 40%;
+  padding: 1em;
+  margin: 1em;
+  height: 110px;
+  text-align: center;
+  padding-top: 28px;
+}
+
+.donneesChiffre{
+  font-weight: bold;
+  padding: 1em;
+  font-size: 20px;
+}
+
+.dataAndTitle{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+
+/* Graphiques */
+.chartParTrajet{
+  width: 100%;
+}
+
+.containerChartParTrajet{
+  display: flex;
+  padding: 1em 0em;
+  height: 100px;
+}
+
+.chartParGravite{
+  display: flex;
+  width: auto;
+}
+
+.containerChartParGravite{
+  display: flex;
+  padding: 1em 0em;
+  height: 400px;
+  align-items: center;
+}
+
+
+
+/************ Partie 3 ****************/
+
+.container3{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  max-width: 100%;
+
+  max-height: auto;
+  background-color: #ff111100;
+  box-sizing: border-box;
+}
+
+.container3sousContainer{
+  max-width: 50%;
+  box-sizing: border-box;
+  padding-right: 2em;
+}
+
+.container3sousContainer1{
+  max-width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.container3sousContainer1 p{
+  padding-bottom: 2em;
+}
+
+
+.container3sousContainer1 div {
+  width: 50%;
+  background-color: #2df52a00;
+  box-sizing: border-box;
+  padding-right: 2em;
+}
+
+
+
+
+/******** 🟢 TABLETS / IPADS (portrait) *********/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .modale {
     position: absolute;
-    top: 0;
+    display: flex;
+    top: -419px;
     bottom: 0;
     left: 0;
     right: 0;
-    max-width: 30%;
-    max-height: 350px;
+    max-width: 80%;
+    max-height: 370px;
     background-color: rgb(255, 255, 255);
-    margin: auto;
     padding: 2em;
     box-sizing: border-box;
     border-radius: 1%;
-  }
-
-  .modale__container{
+    }
+  
+  .mainDataSubcontainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
-    text-align: justify;
-    margin: auto;
-    box-sizing: border-box;
+    width: 100%;
+  }
+  .dataContainer0{
+    display: flex;
   }
 
-  .modale__li{
-    margin-top: 9px;
-    font-weight: 200;
-    font-size: 12px;
-    line-height: 1.5;
+  .donneesTitreetChiffre{
+    width: 17%;
   }
 
-  .modale__paragraph {
-    padding-top: 1em;
+  .dataAndTitle{
+    text-align: center;
   }
 
-  .modale__ul {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 200;
-    font-size: 12px;
-    line-height: 1.5;
-    padding: 0em;
-    margin: 0em;
+  .containerPieCharts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .chartParGravite {
+    width: 98%;
+  }
+  .containerPieCharts {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
-  .modale__fermer{
+  .mainDataContainer__conditionsEclairage {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  
+  .mainDataContainer__conditionsAtmospheriques {
+    width: 45%;
+    padding-left: 13px;
+    padding-right: 13px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainDataContainer__graviteAccidents {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .modale__fermer {
     position: absolute;
     top: 21px;
     right: 24px;
@@ -216,311 +543,70 @@ footer a {
     cursor: pointer;
   }
 
-  .hidden{
-    display: none;
-  }
-
-  .container2{
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-  }
-
-
-  /****** Partie 1 **********/
-  .introduction{
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    padding: 0em 0em 2em 0em;
-  }
-
-
-  /****** Partie 2 - Gauche **********/
-  
-  .container2Gauche{
-    width: 60%; 
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  #mapAccidents{
-    width: 100%;
-    height: 100vh;
-    margin-top: 1em;
-  }
-
-
-
-  /****** Infos dans les Popups de la carte **********/
-
-  .titreDansPopup {
-  padding: 0.3em;
-  margin-bottom: 0.7em;
-  background-color: rgb(205, 201, 200);
-  }
-
-  .leaflet-popup-content {
-  margin: 1;
-  }
-
-  /************ Légende carte ****************/
-
   .legendeMapAccidents{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border: 0 solid rgba(255, 255, 255, 0);
-    margin: 0;
-    z-index: 999;
-    max-width: 90%;
-    height: auto;
-    padding-bottom: 2em;
-    position: absolute;
-    top: 87px;
-    right: 91px;
-    box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.25);
-    padding: 25px;
+    top: 118px;
+    right: 10px;
   }
-  
-  .mapContainer__divs{
-    padding: 15px 0px 5px 0px;
-  }
-  
-
-  .infobulle {
-    position: relative;  
-    cursor: help;
-  }
-  
-  
-  .infobulle:hover::after,
-  .infobulle:focus::after {
-    content: attr(aria-label);  
-    position: absolute;
-    top: 25px;
-    left: 15%;
-    transform: translateX(-50%); 
-    z-index: 1;
-    white-space: none;
-    background-color:#ffffff;
-    border: 0.25px solid #2c2c2c;
-    padding:10px;
-    opacity: 0.9;
-    width:260px;
-  }
-  
-  
-  .leaflet-control-geocoder {
-    box-shadow: 0 0px 0px !important;
-    background-color: white !important;
-    border-radius: 0px !important; 
-    box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.25) !important;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-
-
-  /************ Partie 2 Droite ****************/
-
-  .container2Droite{
-    padding: 0em 0em 0em 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-bottom: 5em;
-    background-color: rgba(255, 0, 0, 0); 
-    width: 40%; 
-    height: auto; 
-    display: flex; 
-    flex-direction: column;
-  }
-
-    /************ nouveau ****************/
-  .mainDataContainer{
-    display: flex;
-    flex-direction: row;
-    padding-top: 22px;
-  }
-
-  .mainDataSubcontainer{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
-
-  .dataContainer0{
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  
-  .donneesContainer{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    justify-content: space-around;
-    align-content: stretch;
-    justify-content: space-between;
-    flex-grow: 1;
-    box-sizing: border-box;
-    max-width: 100%;
-    text-align: center;
-  }
-  
-  
-  .donneesTitreetChiffre{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: #EDEDED;
-    width: 40%;
-    padding: 1em;
-    margin: 1em;
-    height: 110px;
-    text-align: center;
-    padding-top: 28px;
-  }
-  
-  .donneesChiffre{
-    font-weight: bold;
-    padding: 1em;
-    font-size: 20px;
-  }
-
-  .dataAndTitle{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-  
-  
-  /* Graphique motifs de déplacement */
-  .chartParTrajet{
-    width: 100%;
-  }
-  
-  
-  
-  .containerChartParTrajet{
-    display: flex;
-    padding: 1em 0em;
-    height: 100px;
-  }
-  
-  
-  /* Graphique gravité accident */
-  .chartParGravite{
-    display: flex;
-    width: auto;
-  }
-  
-  
-  .containerChartParGravite{
-    display: flex;
-    padding: 1em 0em;
-    height: 400px;
-    align-items: center;
-  }
-  
-
-
-  /************ Partie 3 ****************/
-
-  .container3{
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    max-width: 100%;
-
-    max-height: auto;
-    background-color: #ff111100;
-    box-sizing: border-box;
-  }
-
-  .container3sousContainer{
-    max-width: 50%;
-    box-sizing: border-box;
-    padding-right: 2em;
-  }
-
-
-
-  .container3sousContainer1{
-    max-width: 60%;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    box-sizing: border-box;
-  }
-
-  .container3sousContainer1 p{
-    padding-bottom: 2em;
-  }
-
-
-  .container3sousContainer1 div {
-    width: 50%;
-    background-color: #2df52a00;
-    box-sizing: border-box;
-    padding-right: 2em;
-  }
-
-  
 }
 
 
-/********************* MEDIA SCREEN SMALL SCREENS **********************/
 
 
-@media screen and (max-width: 800px){
 
-  /******************** popupMainPage **********************/
 
-  .modale_overlay{
-    position: fixed;
-    top : 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(12, 12, 12, 0.762);
-    z-index: 1200;
+
+
+
+
+/******** 🟢 MOBILE *********/
+
+@media screen and (max-width: 768px){
+
+  .mainDataSubcontainer {
+    width: 100%;
+  }
+  
+  .mainDataContainer__graviteAccidents{
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .containerPieCharts {
+    width: 100%;
     display: flex;
+    flex-direction: column;
   }
 
-  .modale_overlay.modale_open{
-    display: flex;
+  .mainDataContainer__conditionsEclairage{
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
-  .togglePopup{
-    border: 0px solid white;
-    font-size: medium;
-    text-decoration: underline;
-    cursor: pointer;
+  .mainDataContainer__conditionsAtmospheriques{
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
-  .modale{
-    position: absolute;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5em;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    max-width: 80%;
-    max-height: 370px;
-    background-color: rgb(255, 255, 255);
-    padding: 2em;
-    box-sizing: border-box;
-    border-radius: 1%;
+  h2{
+    padding-top: 2em;
+    padding-bottom: 0.5em;
   }
 
+  .mapContainer{
+    display: none;
+  }
 
+  .mainDataContainer{
+    padding-top: 0em;
+  }
+
+  .introduction{
+    padding-bottom: 0.5em;
+  }
+  
   .textPopup{
     display: flex;
     flex-direction: column;
@@ -555,23 +641,8 @@ footer a {
     text-decoration: none;
   }
 
-  /****** Partie 1 **********/
-  .introduction{
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    padding: 0em 0em 2em 0em;
-    margin-top: 4em;
-  }
 
-   /****** Partie 2 - Gauche **********/
   .container2{
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-  }
-
-  .container2Gauche{
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -583,35 +654,6 @@ footer a {
     margin-top: 1em;
   }
 
-  /************ Infos dans les Popups de la carte ****************/
-
-  .titreDansPopup {
-    padding: 0.3em;
-    margin-bottom: 0.7em;
-    background-color: rgb(205, 201, 200);
-    }
-  
-    .leaflet-popup-content {
-    margin: 1;
-    }
-
-    .leaflet-bottom{
-      z-index: 888 !important;
-    }
-    
-  /************ Légende carte ****************/
-  
-  
-  /************ Partie 2 Droite ****************/
-  .container2Droite{
-    background-color: rgba(255, 0, 0, 0); 
-    max-width: 100%; 
-    height: auto; 
-    display: flex; 
-    flex-direction: column;
-  }
-  
-  
   
   .donneesContainer{
     display: flex;
@@ -643,12 +685,10 @@ footer a {
   }
   
   
-  /* Graphique motifs de déplacement */
+  /* Graphiques */
   .chartParTrajet{
     width: 100%;
   }
-  
-  
   
   .containerChartParTrajet{
     display: flex;
@@ -656,13 +696,10 @@ footer a {
     height: 100px;
   }
   
-  
-  /* Graphique gravité accident */
   .chartParGravite{
     display: flex;
     width: auto;
   }
-  
   
   .containerChartParGravite{
     display: flex;
@@ -670,16 +707,25 @@ footer a {
     height: auto;
     align-items: center;
   }
-  
-  
 
-}
-
-
+    .modale {
+      position: absolute;
+      top: -222px;
+      bottom: 0;
+      left: -26px;
+      right: 0;
+      max-width: 75%;
+      max-height: 496px;
+      background-color: rgb(255, 255, 255);
+      margin: auto;
+      padding: 2em;
+      box-sizing: border-box;
+      border-radius: 1%;
+    }
+  }
 
 
 /******************** Partie 4 **********************/
-
 
 .container4{
   display: flex;
