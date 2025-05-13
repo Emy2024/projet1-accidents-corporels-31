@@ -1,7 +1,7 @@
 // *** Récupération des travaux présents dans le JSON ***/ 
 
 export async function loadDataUsagers() {
-  return await getData("../../geojson/usagersGPS31.geojson");
+  return await getData("https://github.com/Emy2024/projet1-accidents-corporels-31/blob/main/geojson/usagersGPS31.geojson");
 } 
 
 export async function loadDataVehicules() {
