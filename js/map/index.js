@@ -10,6 +10,8 @@ function displayMapContainer(){
         mapContainer.classList.add("mapContainer")
     let mapContainer__h2 = document.createElement("h2")
         mapContainer__h2.innerHTML="Localisation des véhicules impliqués dans des accidents corporels en 2022"
+    let mapLecture = document.createElement("p")
+        mapLecture.innerHTML="Sélectionnez les catégories de véhicules impliqués dans un accident et cliquez sur les icônes de la carte pour en savoir plus sur l'accident."
     let mapContainer__fieldset = document.createElement("fieldset")
         mapContainer__fieldset.classList.add("legendeMapAccidents")
     let mapContainer__h3 = document.createElement("h3")
@@ -71,6 +73,7 @@ function displayMapContainer(){
         map.id = "mapAccidents"
 
     mapContainer.appendChild(mapContainer__h2)
+    mapContainer.appendChild(mapLecture)
     mapContainer.appendChild(mapContainer__fieldset)
     mapContainer__fieldset.appendChild(mapContainer__h3)
     mapContainer__fieldset.appendChild(mapContainer__div1)
