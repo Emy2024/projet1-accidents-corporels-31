@@ -5,19 +5,19 @@ export async function loadDataUsagers() {
 } 
 
 export async function loadDataVehicules() {
-  return await getData("../../geojson/vehiculesGPS31.geojson");
+  return await getData("https://raw.githubusercontent.com/Emy2024/projet1-accidents-corporels-31/refs/heads/main/geojson/vehiculesGPS31.geojson");
 } 
 
-export async function loadDataCommunes() {
+/* export async function loadDataCommunes() {
   return await getData("../../geojson/communes-haute-garonne-586-communes.geojson");
-} 
+}  */
 
 export async function loadDataLieuxAccidents() {
-  return await getData("../../geojson/caracteristiquesLieuxGPS31.geojson");
+  return await getData("https://raw.githubusercontent.com/Emy2024/projet1-accidents-corporels-31/refs/heads/main/geojson/caracteristiquesLieuxGPS31.geojson");
 } 
 
 export async function loadDataLieuxVehiculesAccidents() {
-  return await getData("../../geojson/caracteristiques-lieux-vehiculesVF.geojson");
+  return await getData("https://raw.githubusercontent.com/Emy2024/projet1-accidents-corporels-31/d5e3d1a09266dd467b893242f4784129996d524b/geojson/caracteristiques-lieux-vehiculesVF.geojson");
 } 
 
 
