@@ -1,7 +1,4 @@
 // *** Récupération des travaux présents dans le JSON ***/ 
-export async function loadDataRadars() {
-  return await getData("../../geojson/radars2018.geojson");
-} 
 
 export async function loadDataUsagers() {
   return await getData("../../geojson/usagersGPS31.geojson");
