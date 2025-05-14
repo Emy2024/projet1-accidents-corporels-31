@@ -8,7 +8,7 @@ export function blocFooter(){
         text.classList.add("foorterParagraph")
     let textLink = document.createElement("a")
         textLink.innerHTML="Consultez mon portfolio de développeur web front-end"
-        textLink.href="https://emy2024.github.io/emmanuelle-rey"
+        textLink.href="https://emy2024.github.io/portfolio/"
 
     container.appendChild(subContainer)
     subContainer.appendChild(text)
