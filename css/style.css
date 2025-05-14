@@ -412,6 +412,21 @@ margin: 1;
   color: tomato;
 }
 
+.donneesChiffre1{
+  font-weight: bold;
+  padding: 1em 0.2em 1em 1em;
+  font-size: 20px;
+  color: tomato;
+}
+
+.donneesChiffreInfobulle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .dataAndTitle{
   display: flex;
   flex-direction: column;
