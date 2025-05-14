@@ -69,7 +69,7 @@ h3{
 
 /******************** Footer **********************/
 
-footer{
+.footerContainer{
   position: relative;
   display: flex;
   flex-direction: row;
@@ -84,7 +84,7 @@ footer{
   z-index: 999;
 }
 
-footer a {
+.footerContainer a {
   color: white;
   margin: 0;
   font-weight: 200;
