@@ -36,7 +36,10 @@ function displayMapContainer(){
         mapContainer__input2.name="cyclomoteursScooterCheckbox"
     let mapContainer__label2 = document.createElement("label")
         mapContainer__label2.for="cyclomoteursScooterCheckbox"
-        mapContainer__label2.innerHTML="Motos et scooters"
+        mapContainer__label2.innerHTML="Motos et scooters "
+    let mapContainter__infobulle2 = document.createElement("div")
+        mapContainter__infobulle2.classList.add("fa", "fa-question-circle", "infobulle")
+        mapContainter__infobulle2.ariaLabel="Motos et scooters : cyclomoteurs, scooters et motocyclettes toutes catégories"
 
     let mapContainer__div3 = document.createElement("div")
         mapContainer__div3.classList.add("mapContainer__divs")
@@ -66,8 +69,11 @@ function displayMapContainer(){
         mapContainer__input5.name="EDPCheckbox"
     let mapContainer__label5 = document.createElement("label")
         mapContainer__label5.for="EDPCheckbox"
-        mapContainer__label5.innerHTML="Engins de déplacement personnels"
+        mapContainer__label5.innerHTML="Engins de déplacement personnels "
         mapContainer__label5.setAttribute ="aria-label", "Engins de déplacement personnels : engins motorisés (skateboard, patins à roulettes, trottinette) et non motorisés électriquement (patrouilleur, trottinette électrique, gyropode, gyroskate, gyroroue)"
+    let mapContainter__infobulle5 = document.createElement("div")
+        mapContainter__infobulle5.classList.add("fa", "fa-question-circle", "infobulle")
+        mapContainter__infobulle5.ariaLabel="Engins de déplacement personnels : engins motorisés (skateboard, patins à roulettes, trottinette) et non motorisés électriquement (patrouilleur, trottinette électrique, gyropode, gyroskate, gyroroue)"
 
     let map = document.createElement("div")
         map.id = "mapAccidents"
@@ -83,6 +89,7 @@ function displayMapContainer(){
     mapContainer__fieldset.appendChild(mapContainer__div2)
     mapContainer__div2.appendChild(mapContainer__input2)
     mapContainer__div2.appendChild(mapContainer__label2)
+    mapContainer__label2.appendChild(mapContainter__infobulle2)
 
     mapContainer__fieldset.appendChild(mapContainer__div3)
     mapContainer__div3.appendChild(mapContainer__input3)
@@ -95,6 +102,7 @@ function displayMapContainer(){
     mapContainer__fieldset.appendChild(mapContainer__div5)
     mapContainer__div5.appendChild(mapContainer__input5)
     mapContainer__div5.appendChild(mapContainer__label5)
+    mapContainer__label5.appendChild(mapContainter__infobulle5)
 
     mapContainer.appendChild(map)
 
