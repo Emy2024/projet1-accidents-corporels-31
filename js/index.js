@@ -4,6 +4,7 @@ import * as modale from "./modale/modale.js"
 import * as introduction from "./ui/introduction.js"
 import * as map from "./map/index.js"
 import * as dataAndCharts from "./ui/index.js"
+import * as footer from "./ui/footer.js"
 
 // Variables globales : tableaux vides
 export let USAGERS = []
@@ -35,6 +36,7 @@ async function main(){
     introduction.blocIntroduction()
     map.initMap()
     dataAndCharts.displayCharts()
+    footer.blocFooter()
   } catch(e) {
     console.log(e)
   }
