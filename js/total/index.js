@@ -17,7 +17,7 @@ export function calculTotalNombreVehiculesImpliques(){
 export function calculTotalNombreAccidents(){
     const tableau0 = LIEUX_ACCIDENTS.features
     let elementIdTotalAccident = 0
-        elementIdTotalAccident = document.getElementById('elementIdTotalAccident').innerText=Object.keys(tableau0).length
+        elementIdTotalAccident = document.getElementById('elementIdTotalAccident').innerText=Object.keys(tableau0).length    
 }
 
 export function calculPersonnesDecedees(){
