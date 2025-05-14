@@ -17,9 +17,14 @@ export function displayMainData(){
     let dataTitle1 = document.createElement("div") 
         dataTitle1.classList.add("donneesTitre")
         dataTitle1.innerHTML="Nombre total d'accidents"
+    let wrapper = document.createElement("div")
+        wrapper.classList.add("donneesChiffreInfobulle")
     let dataNumber1 = document.createElement("div") 
-        dataNumber1.classList.add("donneesChiffre")
+        dataNumber1.classList.add("donneesChiffre1")
         dataNumber1.id="elementIdTotalAccident"
+    let infobulle1 = document.createElement("div")
+        infobulle1.classList.add("fa", "fa-question-circle", "infobulle")
+        infobulle1.ariaLabel="2021 : 668 accidents"
 
     let dataContainer2 = document.createElement("div") 
         dataContainer2.classList.add("donneesTitreetChiffre")
@@ -60,7 +65,9 @@ export function displayMainData(){
     dataContainer0.appendChild(dataContainer1)
     dataContainer1.appendChild(dataAndTitleContainer1)
     dataAndTitleContainer1.appendChild(dataTitle1)
-    dataAndTitleContainer1.appendChild(dataNumber1)
+    dataAndTitleContainer1.appendChild(wrapper)
+    wrapper.appendChild(dataNumber1)
+    wrapper.appendChild(infobulle1)
 
     mainDataSubcontainer.appendChild(dataContainer0)
     dataContainer0.appendChild(dataContainer2)
@@ -156,7 +163,7 @@ export function displayPieCharts(){
 }  
 
 
-// Affichage du pieChart "Motif de déplacement"
+// Affichage du treemap "Motif de déplacement"
 export function displayTreeMapMotifDeplacement(){
     let mainDataContainer = document.getElementById("mainDataContainer")
     let mainDataSubcontainer = document.createElement("div")
@@ -164,11 +171,18 @@ export function displayTreeMapMotifDeplacement(){
     let mainDataTitle = document.createElement("h2")
         mainDataTitle.innerHTML="Motifs de déplacement au moment de l'accident"
     let lectureGraphique = document.createElement("p")
-        lectureGraphique.innerHTML = "Lecture du graphique : en 2022 en Haute-Garonne, 529 personnes ont été victimes d'accidents corporels lors de déplacements liés à des loisirs (ballades)." 
+        lectureGraphique.innerHTML = "Lecture du graphique : en 2022 en Haute-Garonne, 529 personnes ont été victimes d'accidents corporels lors de déplacements liés à des loisirs (ballades). " 
     let chart = document.createElement("div")
         chart.id="chartParTrajet"
+    let infobulle = document.createElement("span")
+        infobulle.classList.add("fa", "fa-question-circle", "infobulle")
+        infobulle.ariaLabel="312 motifs de déplacements n'ont pas été renseignés et ne sont par conséquent pas présents dans le graphique ci-dessous."
+    
+    elementIdTotalAccident.appendChild(infobulle)
+
     mainDataContainer.appendChild(mainDataSubcontainer)
     mainDataSubcontainer.appendChild(mainDataTitle)
     mainDataSubcontainer.appendChild(lectureGraphique)
+    lectureGraphique.appendChild(infobulle)
     mainDataSubcontainer.appendChild(chart)
 }
