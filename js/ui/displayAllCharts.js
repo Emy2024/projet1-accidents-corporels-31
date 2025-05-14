@@ -4,7 +4,7 @@ export function displayMainData(){
         mainDataContainer.classList.add("mainDataContainer")
     
     let mainDataSubcontainer = document.createElement("div")
-        mainDataSubcontainer.classList.add("mainDataSubcontainer")
+        mainDataSubcontainer.classList.add("mainDataSubcontainer1")
     let mainDataTitle = document.createElement("h2")
         mainDataTitle.innerHTML="Principales données sur les accidents corporels en 2022"
     
@@ -93,7 +93,7 @@ export function displayMainData(){
 export function displayTreemapTypeOfVehicle(){
     let mainDataContainer = document.getElementById("mainDataContainer")
     let mainDataSubcontainer = document.createElement("div")
-        mainDataSubcontainer.classList.add("mainDataSubcontainer")
+        mainDataSubcontainer.classList.add("mainDataSubcontainer2")
     let mainDataTitle = document.createElement("h2")
         mainDataTitle.innerHTML="Types de véhicules les plus impliqués dans un accident corporel"
     let lectureGraphique = document.createElement("p")
