@@ -25,7 +25,7 @@ function createModaleContent(){
         modale__title.innerHTML="Utilisation des données"
     let modale__paragraph= document.createElement("p")
         modale__paragraph.classList.add("modale__paragraph")
-        modale__paragraph.innerHTML="* Il est conseillé de visualiser ce site sur ordinateur pour une meilleure lisibilité des informations * Les données présentées sur cette page sont issues des Bulletins d’Analyse des Accidents Corporels de la Circulation (BAAC)relevés par les forces de l’ordre. Il s’agit d’une base brute non corrigée des erreurs de saisies qui font l’objet d’un processus de corrections ultérieurement. Seule l\'année 2022 a été prise en compte dans la présente analyse. Les jeux de données exploités sont les suivants : "
+        modale__paragraph.innerHTML="* Il est conseillé de visualiser ce site sur ordinateur pour une meilleure lisibilité des informations * Les données présentées sur cette page sont issues des Bulletins d’Analyse des Accidents Corporels de la Circulation (BAAC) relevés par les forces de l’ordre. Il s’agit d’une base brute non corrigée des erreurs de saisies qui font l’objet d’un processus de corrections ultérieurement. Seule l\'année 2022 a été prise en compte dans la présente analyse. Les jeux de données exploités sont les suivants : "
     let modale__ul = document.createElement("ul")
         modale__ul.classList.add("modale__ul")
     const li__items = ['caracteristiques-2022.csv', 'vehicules-2022.csv', 'lieux-2022.csv','usagers-2022.csv'];
