@@ -17,7 +17,7 @@ export async function loadDataLieuxAccidents() {
 } 
 
 export async function loadDataLieuxVehiculesAccidents() {
-  return await getData("https://raw.githubusercontent.com/Emy2024/projet1-accidents-corporels-31/refs/heads/main/geojson/vehiculesGPS31.geojson");
+  return await getData("https://raw.githubusercontent.com/Emy2024/projet1-accidents-corporels-31/refs/heads/main/geojson/caracteristiques-lieux-vehiculesVF.geojson");
 } 
 
 
