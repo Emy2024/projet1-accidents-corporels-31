@@ -51,7 +51,7 @@ h3{
 	letter-spacing: 1px;
 	color: #f0f0f0;
   z-index: 999;
-  top: 17px;
+  top: 23px;
   right: -50px;
   left: auto;
   -webkit-transform: rotate(45deg);
@@ -86,12 +86,19 @@ footer{
 
 footer a {
   color: white;
+  margin: 0;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .foorterDiv{
   margin: auto;
 }
 
+.foorterParagraph{
+  text-align: center;
+}
 
 
 .introductionBlockquote{
@@ -311,7 +318,11 @@ margin: 1;
 .mainDataSubcontainer{
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 48%;
+  background-color: #edededb7;
+  padding-left: 13px;
+  margin-right: 13px;
+  margin-bottom: 15px;
 }
 
 .mainDataContainer__graviteAccidents{
@@ -320,6 +331,11 @@ margin: 1;
   width: 40%;
   padding-left: 13px;
   padding-right: 13px;
+  background-color: #edededb7;
+}
+
+.paragraphe__graviteAccidents{
+  margin-bottom: 33px;
 }
 
 .containerPieCharts {
@@ -328,28 +344,39 @@ margin: 1;
   flex-direction: row;
 }
 .mainDataContainer__conditionsEclairage{
-  width: 48%;
+  width: 46%;
+  margin-left: 13px;
+  margin-right: 13px;
   padding-left: 13px;
   padding-right: 13px;
   display: flex;
   flex-direction: column;
+  background-color: #edededb7;
+  padding-bottom: 1em;
 }
 
 .mainDataContainer__conditionsAtmospheriques{
-  width: 48%;
+  width: 46%;
+  margin-right: 13px;
   padding-left: 13px;
   padding-right: 13px;
   display: flex;
   flex-direction: column;
+  background-color: #edededb7;
 }
 
 .mainDataContainer__motifDeplacement{
   width: 100%;
+  background-color: #edededb7;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .dataContainer0{
   display: flex;
   flex-wrap: wrap;
+  padding-top: 25px;
 }
 
 .donneesContainer{
@@ -369,11 +396,11 @@ margin: 1;
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #EDEDED;
+  background: white;
   width: 40%;
   padding: 1em;
   margin: 1em;
-  height: 110px;
+  height: 147px;
   text-align: center;
   padding-top: 28px;
 }
@@ -414,6 +441,9 @@ margin: 1;
   align-items: center;
 }
 
+.paragraphe__lumAtmosph {
+  margin-bottom: 3px;
+}
 
 
 /************ Partie 3 ****************/
@@ -480,13 +510,18 @@ margin: 1;
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-right: 0;
+    padding-right: 13px;
   }
   .dataContainer0{
     display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .donneesTitreetChiffre{
-    width: 17%;
+    width: 100%;
+    height: 67px;
   }
 
   .dataAndTitle{
@@ -502,6 +537,10 @@ margin: 1;
   .chartParGravite {
     width: 98%;
   }
+  .paragraphe__graviteAccidents{
+    margin-bottom: 10px;
+  }
+
   .containerPieCharts {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -531,6 +570,9 @@ margin: 1;
     padding-right: 13px;
   }
 
+  .paragraphe__lumAtmosph {
+    margin-bottom: 15px;
+  }
   .modale__fermer {
     position: absolute;
     top: 21px;
@@ -560,39 +602,82 @@ margin: 1;
 
 /******** 🟢 MOBILE *********/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
+
+  .modale__openButton{
+    width: 109px;
+    position: relative;
+    text-align: left;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    z-index: 999;
+    padding-left: 23px;
+    background: #3ebabe;
+    cursor: pointer;
+    font-size: medium;
+    margin-bottom: 15px;
+    -webkit-transform: rotate(0deg);
+    left: 0px;
+    top: 3px;
+  }
 
   .mainDataSubcontainer {
     width: 100%;
+    margin-right: 0px;
+    margin-top: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
   
-  .mainDataContainer__graviteAccidents{
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+.mainDataContainer__graviteAccidents {
+  width: 93%;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 10px;
+}
 
-  .containerPieCharts {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+.dataContainer0 {
+  padding-top: 0px;
+}
 
-  .mainDataContainer__conditionsEclairage{
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+.containerPieCharts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainDataContainer__conditionsEclairage {
+  width: 93%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 17px;
+  padding-left: 13px;
+  padding-right: 13px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
 
   .mainDataContainer__conditionsAtmospheriques{
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
+    width: 93%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 17px;
+    padding-left: 13px;
+    padding-right: 13px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
   }
 
   h2{
-    padding-top: 2em;
+    padding-top: 1.5em;
     padding-bottom: 0.5em;
+  }
+
+  .paragraphe__graviteAccidents{
+    margin-bottom: 10px;
   }
 
   .mapContainer{
@@ -668,14 +753,9 @@ margin: 1;
   }
   
   
-  .donneesTitreetChiffre{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: #EDEDED;
-    width: 30%;
-    padding: 1em;
-    margin: 1em;
+  .donneesTitreetChiffre {
+    width: 100%;
+    height: 67px;
   }
   
   .donneesChiffre{
@@ -708,20 +788,20 @@ margin: 1;
     align-items: center;
   }
 
-    .modale {
-      position: absolute;
-      top: -222px;
-      bottom: 0;
-      left: -26px;
-      right: 0;
-      max-width: 75%;
-      max-height: 496px;
-      background-color: rgb(255, 255, 255);
-      margin: auto;
-      padding: 2em;
-      box-sizing: border-box;
-      border-radius: 1%;
-    }
+  .modale {
+    position: absolute;
+    top: -222px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 81%;
+    max-height: 496px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 2em;
+    box-sizing: border-box;
+    border-radius: 1%;
+  }
   }
 
 
