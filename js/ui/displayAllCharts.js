@@ -110,6 +110,7 @@ export function displayBarChart(){
         mainDataTitle.innerHTML="Gravité des accidents"
     let lectureGraphique = document.createElement("p")
         lectureGraphique.innerHTML = "Lecture du graphique : en 2022 en Haute-Garonne, parmi 1364 personnes concernées par des accidents corporels, 48 sont décédées." 
+        lectureGraphique.classList.add("paragraphe__graviteAccidents")
     let chart = document.createElement("canvas")
         chart.id="chartParGravite"
     mainDataContainer.appendChild(mainDataSubcontainer)
@@ -118,52 +119,18 @@ export function displayBarChart(){
     mainDataSubcontainer.appendChild(chart)
 }
 
-
-// Affichage du pieChart "Conditions d'éclairage"
-/* export function displayPieChartConditionsEclairage(){
-    let mainDataContainer = document.getElementById("mainDataContainer")
-    let mainDataSubcontainer = document.createElement("div")
-        mainDataSubcontainer.classList.add("mainDataContainer__conditionsEclairage")
-    let mainDataTitle = document.createElement("h2")
-        mainDataTitle.innerHTML="Conditions d'éclairage"
-    let lectureGraphique = document.createElement("p")
-        lectureGraphique.innerHTML = "Lecture du graphique : en 2022 en Haute-Garonne, près de 64% des accidents corporels ont eu lieu en plein jour." 
-    let chart = document.createElement("canvas")
-        chart.id="chartConditionsLum"
-    mainDataContainer.appendChild(mainDataSubcontainer)
-    mainDataSubcontainer.appendChild(mainDataTitle)
-    mainDataSubcontainer.appendChild(lectureGraphique)
-    mainDataSubcontainer.appendChild(chart)
-}  */
-
-// Affichage du pieChart "Conditions atmosphériques"
-/* export function displayPieChartConditionsAtmospheriques(){
-    let mainDataContainer = document.getElementById("mainDataContainer")
-    let mainDataSubcontainer = document.createElement("div")
-        mainDataSubcontainer.classList.add("mainDataContainer__conditionsAtmospheriques")
-    let mainDataTitle = document.createElement("h2")
-        mainDataTitle.innerHTML="Conditions atmosphériques"
-    let lectureGraphique = document.createElement("p")
-        lectureGraphique.innerHTML = "Lecture du graphique : en 2022 en Haute-Garonne, 83% des accidents corporels ont eu lieu dans des conditions dites normales." 
-    let chart = document.createElement("canvas")
-        chart.id="chartConditionsAtmospheriques"
-    mainDataContainer.appendChild(mainDataSubcontainer)
-    mainDataSubcontainer.appendChild(mainDataTitle)
-    mainDataSubcontainer.appendChild(lectureGraphique)
-    mainDataSubcontainer.appendChild(chart)
-} */
-
-
+// Affichage des pieCharts "éclairage" et "conditions atmosphériques"
 export function displayPieCharts(){
     let mainDataContainer = document.getElementById("mainDataContainer")
-    let containerPieCharts = document.createElement("div") // gros container
+    let containerPieCharts = document.createElement("div") 
         containerPieCharts.classList.add("containerPieCharts")
     let mainDataSubcontainer = document.createElement("div")
         mainDataSubcontainer.classList.add("mainDataContainer__conditionsEclairage")
     let mainDataTitle = document.createElement("h2")
         mainDataTitle.innerHTML="Conditions d'éclairage"
     let lectureGraphique = document.createElement("p")
-        lectureGraphique.innerHTML = "Lecture du graphique : en 2022 en Haute-Garonne, près de 64% des accidents corporels ont eu lieu en plein jour." 
+        lectureGraphique.innerHTML = "Lecture du graphique : en 2022 en Haute-Garonne, près de 64% des accidents corporels ont eu lieu dans des conditions de plein jour." 
+        lectureGraphique.classList.add("paragraphe__lumAtmosph")
     let chart = document.createElement("canvas")
         chart.id="chartConditionsLum"
 
@@ -173,6 +140,7 @@ export function displayPieCharts(){
         mainDataTitle2.innerHTML="Conditions atmosphériques"
     let lectureGraphique2 = document.createElement("p")
         lectureGraphique2.innerHTML = "Lecture du graphique : en 2022 en Haute-Garonne, 83% des accidents corporels ont eu lieu dans des conditions dites normales." 
+        lectureGraphique2.classList.add("paragraphe__lumAtmosph")
     let chart2 = document.createElement("canvas")
         chart2.id="chartConditionsAtmospheriques"
 
@@ -185,8 +153,7 @@ export function displayPieCharts(){
     mainDataSubcontainer2.appendChild(mainDataTitle2)
     mainDataSubcontainer2.appendChild(lectureGraphique2)
     mainDataSubcontainer2.appendChild(chart2)
-} 
-
+}  
 
 
 // Affichage du pieChart "Motif de déplacement"

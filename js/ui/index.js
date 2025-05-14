@@ -21,7 +21,7 @@ export function displayCharts(){
     
     allCharts.displayPieCharts()
     pieChartEclairage.conditionsEclairage()
-    pieChartAsmospherique.conditionsAtmospheriques()
+    pieChartAsmospherique.conditionsAtmospheriques() 
 
     allCharts.displayTreeMapMotifDeplacement()
     treemapMotifDeplacement.displayDataAccidentsTreemap()
