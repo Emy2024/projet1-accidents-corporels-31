@@ -315,14 +315,24 @@ margin: 1;
   flex-wrap: wrap;
 }
 
-.mainDataSubcontainer{
+.mainDataSubcontainer1{
   display: flex;
   flex-direction: column;
-  width: 48%;
+  width: 49%;
   background-color: #edededb7;
   padding-left: 13px;
   margin-right: 13px;
   margin-bottom: 15px;
+}
+
+.mainDataSubcontainer2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #edededb7;
+  padding-left: 13px;
+  width: 47%;
+  margin-bottom: 15px;
+  padding-right: 14px;
 }
 
 .mainDataContainer__graviteAccidents{
@@ -357,7 +367,6 @@ margin: 1;
 
 .mainDataContainer__conditionsAtmospheriques{
   width: 46%;
-  margin-right: 13px;
   padding-left: 13px;
   padding-right: 13px;
   display: flex;
