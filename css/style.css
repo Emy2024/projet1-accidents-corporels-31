@@ -886,3 +886,25 @@ margin: 1;
 
 
 
+/**Test **/
+#loading-bar-container {
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  right: 25%;
+  width: 50%;
+  height: 15px;
+  background: #5c5d5d;
+  z-index: 9999;
+}
+
+#loading-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #3ebabe;
+  transition: width 0.2s ease-out;
+}
+
+body.loading {
+  overflow: hidden;
+}
