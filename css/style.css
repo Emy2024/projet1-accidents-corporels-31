@@ -642,11 +642,14 @@ margin: 1;
   
   p {
     font-size: 15px;
+    color: black;
   }
+
   .sourceINSEE {
       font-size: 13px;
       text-transform: uppercase;
       padding: 1em 0em;
+      color: black;
     }
 
   .introductionBlockquote {
