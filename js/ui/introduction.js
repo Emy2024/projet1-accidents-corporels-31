@@ -7,7 +7,7 @@ export function blocIntroduction() {
     h1.textContent = "Panorama des accidents corporels en Haute-Garonne en 2022";
 
     const btn__returnPortfolio = document.getElementById("btn__returnPortfolio")
-    btn__returnPortfolio.textContent = "Consulter mon portfolio"
+    btn__returnPortfolio.innerHTML("Consulter mon portfolio") 
     btn__returnPortfolio.classList.add("btn__returnPortfolio")
     btn__returnPortfolio.href="https://emy2024.github.io/portfolio/"
 
