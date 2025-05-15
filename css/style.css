@@ -639,6 +639,23 @@ margin: 1;
 /******** 🟢 MOBILE *********/
 
 @media screen and (max-width: 767px){
+  
+  p {
+    font-size: 15px;
+  }
+  .sourceINSEE {
+      font-size: 13px;
+      text-transform: uppercase;
+      padding: 1em 0em;
+    }
+
+  .introductionBlockquote {
+    font-size: 15px;
+  }
+
+  .donneesChiffre1 {
+    font-size: 25px;
+  }
 
   .modale__openButton{
     width: 109px;
@@ -719,6 +736,8 @@ margin: 1;
   h2{
     padding-top: 1.5em;
     padding-bottom: 0.5em;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .paragraphe__graviteAccidents{
@@ -806,7 +825,7 @@ margin: 1;
   .donneesChiffre{
     font-weight: bold;
     padding: 1em;
-    font-size: 18px;
+    font-size: 25px;
     color: tomato;
   }
   
