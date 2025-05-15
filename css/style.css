@@ -54,8 +54,23 @@ h3{
   top: 23px;
   right: 28px;
   left: auto;
-  -webkit-transform: rotate(0deg);
   background: #3ebabe;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.btn__returnPortfolio {
+  width: 210px;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  z-index: 999;
+  top: 23px;
+  right: 240px;
+  left: auto;
+  background: #333333;
   cursor: pointer;
   font-size: medium;
 }
@@ -135,7 +150,6 @@ h3{
   font-weight: bold;
   margin-top:1em;
 }
-
 
 .mapContainer{
   display: flex;
@@ -273,6 +287,7 @@ margin: 1;
 
 .mapContainer__divs{
   padding: 15px 0px 5px 0px;
+  display: flex;
 }
 
 .infobulle {
@@ -531,6 +546,33 @@ margin: 1;
     border-radius: 1%;
     }
   
+    .modale__openButton {
+      width: 109px;
+      position: relative;
+      text-align: left;
+      line-height: 20px;
+      letter-spacing: 1px;
+      color: #f0f0f0;
+      z-index: 999;
+      padding-left: 23px;
+      background: #3ebabe;
+      cursor: pointer;
+      font-size: medium;
+      margin-bottom: 15px;
+      -webkit-transform: rotate(0deg);
+      left: 0px;
+      top: 3px;
+    }
+
+    .btn__returnPortfolio {
+      width: 210px;
+      line-height: 20px;
+      position: absolute;
+      left: 174px;
+      top: 31px;
+      right: 0;
+      margin-bottom: 15px;
+    }
 
   .mainDataSubcontainer1 {
     display: flex;
@@ -678,6 +720,15 @@ margin: 1;
     top: 3px;
   }
   
+  .btn__returnPortfolio {
+    width: 210px;
+    line-height: 20px;
+    position: relative;
+    left: 0px;
+    top: 3px;
+    margin-bottom: 15px;
+  }
+
   .mainDataSubcontainer1 {
     width: 100%;
     margin-right: 0px;
