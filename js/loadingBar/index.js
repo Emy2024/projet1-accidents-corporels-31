@@ -23,17 +23,17 @@ function updateProgress() {
 }
 
 function initEvents(){
-    window.addEventListener('load', () => {
     const interval = setInterval(updateProgress, 700);
-    clearInterval(interval);
-    const loadingBar = document.getElementById("loading-bar")
-    loadingBar.style.width = '100%';
+    window.addEventListener('load', () => {
+        clearInterval(interval);
+        const loadingBar = document.getElementById("loading-bar")
+        loadingBar.style.width = '100%';
 
-    setTimeout(() => {
-        const container = document.getElementById("loading-bar-container")
-        container.style.display = 'none';
-        document.body.classList.remove('loading');
-    }, 500);
+        setTimeout(() => {
+            const container = document.getElementById("loading-bar-container")
+            container.style.display = 'none';
+            document.body.classList.remove('loading');
+        }, 500);
     });
 }
 
