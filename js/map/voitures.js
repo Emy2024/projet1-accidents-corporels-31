@@ -15,7 +15,7 @@ export function displayVoitures(nomCarte){
             }
     },
     onEachFeature: contentOfMyPopup.onEachFeatureAccidents
-    }).addTo(nomCarte);
+    })/* .addTo(nomCarte); */
 
     var elementIdVoitures = document.getElementById("voituresCheckbox");
     elementIdVoitures.addEventListener('change',clickCheckbox1)

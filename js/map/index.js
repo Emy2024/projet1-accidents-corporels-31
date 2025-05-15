@@ -23,7 +23,7 @@ function displayMapContainer(){
         mapContainer__input1.type="checkbox"
         mapContainer__input1.id="voituresCheckbox"
         mapContainer__input1.name="voituresCheckbox"
-        mapContainer__input1.checked = true
+        /* mapContainer__input1.checked = true */
     let mapContainer__label1 = document.createElement("label")
         mapContainer__label1.for="voituresCheckbox"
         mapContainer__label1.innerHTML="Voitures"
