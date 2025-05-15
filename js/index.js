@@ -1,4 +1,5 @@
 // Point d'entrée de l'application
+import * as loading from "./loadingBar/index.js"
 import * as readData from "./fetch/readData.js"
 import * as modale from "./modale/modale.js"
 import * as introduction from "./ui/introduction.js"
@@ -31,6 +32,7 @@ async function getAllData() {
 // Point d'entrée
 async function main(){
   try {
+    loading.displayLoadingBar()
     await getAllData()
     modale.displayModale()
     introduction.blocIntroduction()
