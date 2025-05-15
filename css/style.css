@@ -863,10 +863,10 @@ margin: 1;
     left: 0;
     right: 0;
     max-width: 81%;
-    max-height: 496px;
+    min-height: 550px;
     background-color: rgb(255, 255, 255);
     margin: auto;
-    padding: 2em;
+    padding: 25px 15px 25px 15px;
     box-sizing: border-box;
     border-radius: 1%;
   }
