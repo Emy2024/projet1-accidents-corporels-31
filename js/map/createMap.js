@@ -10,12 +10,18 @@ export function createMap(){
 }
 
 function displayMap(){
-    let mapAccidents = L.map('mapAccidents').setView([43.28, 1.49], 8.5);
+/*     let mapAccidents = L.map('mapAccidents').setView([43.28, 1.49], 8.5);
     L.tileLayer('  http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         maxZoom: 15,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &#65372; Contenu développé par Emmanuelle Rey &#65372; Données extraites du fichier BAAC 2022'
-    }).addTo(mapAccidents);
+    }).addTo(mapAccidents); */
 
+    const key = 'roJE9k7qoZdUESq25Rro';
+      const mapAccidents = L.map('mapAccidents').setView([43.28, 1.49], 8.5);
+      const mtLayer = L.maptiler.maptilerLayer({
+        apiKey: key,
+        style: L.maptiler.MapStyle.STREETS, 
+      }).addTo(mapAccidents);
 
     let osmGeocoder = new L.Control.OSMGeocoder({
         placeholder: 'Tapez le nom d\'une commune',
