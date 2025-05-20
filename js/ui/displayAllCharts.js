@@ -14,6 +14,8 @@ export function displayMainData(){
         dataContainer1.classList.add("donneesTitreetChiffre")
     let dataAndTitleContainer1 = document.createElement("div") 
         dataAndTitleContainer1.classList.add("dataAndTitle")
+    let icon1 = document.createElement("i")
+        icon1.classList.add("fa-solid", "fa-triangle-exclamation", "picto")
     let dataTitle1 = document.createElement("div") 
         dataTitle1.classList.add("donneesTitre")
         dataTitle1.innerHTML="Nombre total d'accidents"
@@ -30,6 +32,8 @@ export function displayMainData(){
         dataContainer2.classList.add("donneesTitreetChiffre")
     let dataAndTitleContainer2 = document.createElement("div") 
         dataAndTitleContainer2.classList.add("dataAndTitle")
+    let icon2 = document.createElement("i")
+        icon2.classList.add("fa-solid", "fa-road-circle-xmark", "picto")
     let dataTitle2 = document.createElement("div") 
         dataTitle2.classList.add("donneesTitre")
         dataTitle2.innerHTML="Nombre total de véhicules impliqués"
@@ -41,6 +45,8 @@ export function displayMainData(){
         dataContainer3.classList.add("donneesTitreetChiffre")
     let dataAndTitleContainer3 = document.createElement("div") 
         dataAndTitleContainer3.classList.add("dataAndTitle")
+    let icon3 = document.createElement("i")
+        icon3.classList.add("fa-solid", "fa-user-injured", "picto")
     let dataTitle3 = document.createElement("div") 
         dataTitle3.classList.add("donneesTitre")
         dataTitle3.innerHTML="Nombre de personnes impliquées"
@@ -52,6 +58,8 @@ export function displayMainData(){
         dataContainer4.classList.add("donneesTitreetChiffre")
     let dataAndTitleContainer4 = document.createElement("div") 
         dataAndTitleContainer4.classList.add("dataAndTitle")
+    let icon4 = document.createElement("i")
+        icon4.classList.add("fa-solid", "fa-person-falling-burst", "picto")
     let dataTitle4 = document.createElement("div") 
         dataTitle4.classList.add("donneesTitre")
         dataTitle4.innerHTML="Nombre de personnes décédées"
@@ -64,6 +72,7 @@ export function displayMainData(){
     mainDataSubcontainer.appendChild(dataContainer0)
     dataContainer0.appendChild(dataContainer1)
     dataContainer1.appendChild(dataAndTitleContainer1)
+    dataAndTitleContainer1.appendChild(icon1)
     dataAndTitleContainer1.appendChild(dataTitle1)
     dataAndTitleContainer1.appendChild(wrapper)
     wrapper.appendChild(dataNumber1)
@@ -72,18 +81,21 @@ export function displayMainData(){
     mainDataSubcontainer.appendChild(dataContainer0)
     dataContainer0.appendChild(dataContainer2)
     dataContainer2.appendChild(dataAndTitleContainer2)
+    dataAndTitleContainer2.appendChild(icon2)
     dataAndTitleContainer2.appendChild(dataTitle2)
     dataAndTitleContainer2.appendChild(dataNumber2)
 
     mainDataSubcontainer.appendChild(dataContainer0)
     dataContainer0.appendChild(dataContainer3)
     dataContainer3.appendChild(dataAndTitleContainer3)
+    dataAndTitleContainer3.appendChild(icon3)
     dataAndTitleContainer3.appendChild(dataTitle3)
     dataAndTitleContainer3.appendChild(dataNumber3)
     
     mainDataSubcontainer.appendChild(dataContainer0)
     dataContainer0.appendChild(dataContainer4)
     dataContainer4.appendChild(dataAndTitleContainer4)
+    dataAndTitleContainer4.appendChild(icon4)
     dataAndTitleContainer4.appendChild(dataTitle4)
     dataAndTitleContainer4.appendChild(dataNumber4)
     
