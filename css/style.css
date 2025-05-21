@@ -120,7 +120,7 @@ h3{
 .introductionBlockquote{
   font-size: 12px;
   margin: 0;
-  max-width:100%;
+  max-width:54%;
   font-style:italic;
   color: #555555;
   padding:1.2em 30px 1.2em 75px;
@@ -310,6 +310,7 @@ margin: 1;
   padding:10px;
   opacity: 0.9;
   width:260px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .leaflet-control-geocoder {
@@ -537,6 +538,10 @@ margin: 1;
 /******** 🟢 TABLETS / IPADS (portrait) *********/
 @media (min-width: 768px) and (max-width: 1024px) {
 
+  .introductionBlockquote{
+    max-width:100%;
+  }
+
   .modale {
     position: absolute;
     display: flex;
@@ -702,6 +707,8 @@ margin: 1;
 
   .introductionBlockquote {
     font-size: 15px;
+    max-width: 84%;
+    padding: 25px 30px 25px 15px;
   }
 
   .donneesChiffre1 {
@@ -814,7 +821,7 @@ margin: 1;
   }
 
   .introduction{
-    padding-bottom: 0.5em;
+    padding-bottom: 1.5em;
   }
   
   .textPopup{
